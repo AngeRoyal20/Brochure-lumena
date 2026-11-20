@@ -59,6 +59,21 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.logo img {
+    display: block;
+    height: 80px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
 .logo h2 {
     color: #fff;
     font-size: 23px;
@@ -292,8 +307,6 @@ header {
     border-color: #F4A62A;
 }
 
-/* CHAMP DE SÉLECTION DE FICHIER */
-
 .form-group input[type="file"] {
     background-color: #fff;
     cursor: pointer;
@@ -351,7 +364,50 @@ header {
 
 
 /* ==============================
-   9. PIED DE PAGE
+   9. SECTION GALERIE
+============================== */
+
+#galerie {
+    background-color: #f7f9fc;
+}
+
+.galerie-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galerie-item {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    aspect-ratio: 4 / 3;
+}
+
+.galerie-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.galerie-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.galerie-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ==============================
+   10. PIED DE PAGE
 ============================== */
 
 footer {
@@ -364,7 +420,7 @@ footer {
 
 
 /* ==============================
-   10. BOUTON WHATSAPP FLOTTANT
+   11. BOUTON WHATSAPP FLOTTANT
 ============================== */
 
 .whatsapp-float {
@@ -397,7 +453,7 @@ footer {
 
 
 /* ==============================
-   11. RESPONSIVE TABLETTE
+   12. RESPONSIVE TABLETTE
 ============================== */
 
 @media screen and (max-width: 900px) {
@@ -425,6 +481,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .galerie-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .hero-content h1 {
         font-size: 38px;
     }
@@ -432,7 +492,7 @@ footer {
 
 
 /* ==============================
-   12. RESPONSIVE MOBILE
+   13. RESPONSIVE MOBILE
 ============================== */
 
 @media screen and (max-width: 600px) {
@@ -488,6 +548,15 @@ footer {
         height: 230px;
     }
 
+    .galerie-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .galerie-item {
+        aspect-ratio: 4 / 3;
+    }
+
     #devis-form {
         padding: 20px;
     }
@@ -502,22 +571,5 @@ footer {
         padding: 12px 18px;
         font-size: 13px;
     }
-   /* ==============================
-   LOGO LUMENA-GROUP
-============================== */
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-}
-
-.logo img {
-    display: block;
-    height: 100px;
-    width: auto;
-    max-width: 500px;
-    object-fit: contain;
-}
 }
