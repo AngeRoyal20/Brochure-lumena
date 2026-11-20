@@ -510,14 +510,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    height: 200px;
 }
 
 .logo img {
     display: block;
     height: 100px;
     width: auto;
-    max-width: 300px;
+    max-width: 500px;
     object-fit: contain;
 }
 }
