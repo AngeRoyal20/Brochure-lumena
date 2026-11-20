@@ -407,7 +407,52 @@ header {
 
 
 /* ==============================
-   10. PIED DE PAGE
+   10. SECTION NOS INNOVATIONS
+============================== */
+
+#innovations {
+    background-color: #f7f9fc;
+}
+
+.innovations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1350px;
+    margin: auto;
+    align-items: start;
+}
+
+.innovation-item {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.innovation-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.innovation-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    transition: 0.4s;
+}
+
+.innovation-item:hover img {
+    transform: scale(1.02);
+}
+
+
+/* ==============================
+   11. PIED DE PAGE
 ============================== */
 
 footer {
@@ -420,7 +465,7 @@ footer {
 
 
 /* ==============================
-   11. BOUTON WHATSAPP FLOTTANT
+   12. BOUTON WHATSAPP FLOTTANT
 ============================== */
 
 .whatsapp-float {
@@ -453,7 +498,7 @@ footer {
 
 
 /* ==============================
-   12. RESPONSIVE TABLETTE
+   13. RESPONSIVE TABLETTE
 ============================== */
 
 @media screen and (max-width: 900px) {
@@ -485,6 +530,11 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .innovations-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
     .hero-content h1 {
         font-size: 38px;
     }
@@ -492,7 +542,7 @@ footer {
 
 
 /* ==============================
-   13. RESPONSIVE MOBILE
+   14. RESPONSIVE MOBILE
 ============================== */
 
 @media screen and (max-width: 600px) {
@@ -555,6 +605,16 @@ footer {
 
     .galerie-item {
         aspect-ratio: 4 / 3;
+    }
+
+    .innovations-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .innovation-item img {
+        width: 100%;
+        height: auto;
     }
 
     #devis-form {
