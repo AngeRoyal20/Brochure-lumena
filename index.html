@@ -21,9 +21,7 @@
        target="_blank"
        rel="noopener noreferrer"
        aria-label="Contacter La Brochure sur WhatsApp">
-
         <span>WhatsApp</span>
-
     </a>
 
 
@@ -31,7 +29,6 @@
     <header>
         <nav class="navbar">
 
-            <!-- LOGO LUMENA GROUP IMPACT -->
             <div class="logo">
                 <img
                     src="Logo coloré Lumena Group Impact.png"
@@ -46,6 +43,7 @@
                 <li><a href="#realisations">Nos réalisations</a></li>
                 <li><a href="#devis">Demander un devis</a></li>
                 <li><a href="#contact">Contacts</a></li>
+                <li><a href="#galerie">Galerie</a></li>
             </ul>
 
         </nav>
@@ -183,43 +181,29 @@
         <div class="realisations-container">
 
             <div class="realisation-card">
-
-                <img
-                    src="carte.png"
-                    alt="Exemple de cartes de visite">
-
+                <img src="carte.png" alt="Exemple de cartes de visite">
                 <h3>Cartes de visite</h3>
-
             </div>
 
             <div class="realisation-card">
-
-                <img
-                    src="flyers.png"
-                    alt="Exemple de flyers et supports imprimés">
-
+                <img src="flyers.png" alt="Exemple de flyers et supports imprimés">
                 <h3>Flyers et affiches</h3>
-
             </div>
 
             <div class="realisation-card">
-
-                <img
-                    src="T-shirt.png"
-                    alt="Exemple de T-shirt personnalisé">
-
+                <img src="T-shirt.png" alt="Exemple de T-shirt personnalisé">
                 <h3>T-shirts personnalisés</h3>
-
             </div>
 
             <div class="realisation-card">
-
-                <img
-                    src="bache.png"
-                    alt="Exemple de support publicitaire">
-
+                <img src="bache.png" alt="Exemple de support publicitaire">
                 <h3>Impression sur bâches</h3>
+            </div>
 
+            <!-- NOUVEAU BLOC PHOTO MINUTE -->
+            <div class="realisation-card">
+                <img src="photo-minute.png" alt="Exemple de photo d'identité">
+                <h3>Photo minute</h3>
             </div>
 
         </div>
@@ -239,33 +223,21 @@
 
             <div class="form-group">
                 <label for="nom">Nom complet</label>
-
-                <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    placeholder="Votre nom"
-                    required>
+                <input type="text" id="nom" name="nom"
+                    placeholder="Votre nom" required>
             </div>
 
             <div class="form-group">
                 <label for="telephone">Téléphone</label>
-
-                <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone"
-                    placeholder="Votre numéro"
-                    required>
+                <input type="tel" id="telephone" name="telephone"
+                    placeholder="Votre numéro" required>
             </div>
 
             <div class="form-group">
                 <label for="service">Type de prestation</label>
 
                 <select id="service" name="service" required>
-
                     <option value="">Choisir un service</option>
-
                     <option>Cartes de visite</option>
                     <option>Cartes d'anniversaire</option>
                     <option>Cartes de baptême</option>
@@ -276,59 +248,37 @@
                     <option>Photo minute</option>
                     <option>Impression et photocopie</option>
                     <option>Autre prestation</option>
-
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="quantite">Quantité souhaitée</label>
-
-                <input
-                    type="number"
-                    id="quantite"
-                    name="quantite"
-                    min="1"
-                    placeholder="Exemple : 100"
-                    required>
+                <input type="number" id="quantite" name="quantite"
+                    min="1" placeholder="Exemple : 100" required>
             </div>
 
             <div class="form-group">
                 <label for="format">Format ou dimensions souhaités</label>
-
-                <input
-                    type="text"
-                    id="format"
-                    name="format"
+                <input type="text" id="format" name="format"
                     placeholder="Exemple : A4, A3, format personnalisé">
             </div>
 
             <div class="form-group">
                 <label for="message">Description de votre projet</label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
+                <textarea id="message" name="message" rows="5"
                     placeholder="Décrivez votre besoin..."></textarea>
             </div>
 
             <!-- AJOUT DE FICHIER -->
             <div class="form-group">
+                <label for="fichier">Joindre un fichier (facultatif)</label>
 
-                <label for="fichier">
-                    Joindre un fichier (facultatif)
-                </label>
-
-                <input
-                    type="file"
-                    id="fichier"
-                    name="fichier"
+                <input type="file" id="fichier" name="fichier"
                     accept=".pdf,.png,.jpg,.jpeg">
 
                 <small>
                     Formats acceptés : PDF, PNG, JPG et JPEG.
                 </small>
-
             </div>
 
             <button type="submit" class="btn">
@@ -362,17 +312,14 @@
 
             <p>
                 <strong>WhatsApp :</strong>
-
                 <a href="https://wa.me/2250566899506"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                    target="_blank" rel="noopener noreferrer">
                     +225 05 66 89 95 06
                 </a>
             </p>
 
             <p>
                 <strong>Téléphone secondaire :</strong>
-
                 <a href="tel:+2250758866635">
                     +225 07 58 86 66 35
                 </a>
@@ -380,7 +327,6 @@
 
             <p>
                 <strong>E-mail :</strong>
-
                 <a href="mailto:lumenagroup626@gmail.com">
                     lumenagroup626@gmail.com
                 </a>
@@ -396,6 +342,45 @@
                 San Pedro, quartier Cité,
                 derrière l'église catholique Saint-Paul.
             </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOUVELLE SECTION GALERIE -->
+    <section id="galerie">
+
+        <div class="section-title">
+            <h2>Notre galerie</h2>
+            <p>Découvrez en images nos travaux et nos réalisations</p>
+        </div>
+
+        <div class="galerie-container">
+
+            <div class="galerie-item">
+                <img src="galerie1.jpg" alt="Réalisation de La Brochure Lumena-Group">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie2.jpg" alt="Travaux d'impression">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie3.jpg" alt="Travaux de personnalisation">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie4.jpg" alt="Supports publicitaires">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie5.jpg" alt="Travaux de l'imprimerie">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie6.jpg" alt="Autres réalisations">
+            </div>
 
         </div>
 
